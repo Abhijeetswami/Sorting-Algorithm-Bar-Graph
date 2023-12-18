@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bar Graph</title>
+    <h1>Comparison Sorting Algorithm</h1>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="btn btn-primary" onclick="randomizeArray()">Randomized Array</button>
+            <button class="btn btn-primary" onclick="insertionSort()">Insertion Sort</button>
+            <button class="btn btn-primary" onclick="selectionSort()">Selection Sort</button>
+            <button class="btn btn-primary" onclick="bubbleSort()">Bubble Sort</button>
+            <button class="btn btn-primary" onclick="quickSort()">Quick Sort</button>
+            <button class="btn btn-primary" onclick="mergeSort()">Merge Sort</button>
+            <button class="btn btn-primary" onclick="shellSort()">Shell Sort</button>
+            <button class="btn btn-primary" onclick="changeSize()">Change Size</button>
+        </div>
+
+        <div id="barGraph" class="bar-container"></div>
+        <div class="bar-labels" id="barLabels"></div>
+
+        <div class="form-container">
+            <input type="number" id="positionInput" class="form-control" placeholder="Enter position (1-100)">
+            <input type="number" id="heightRateInput" class="form-control" placeholder="Enter height rate (1-100)">
+            <button class="btn btn-primary" onclick="setBar()">Set Bar</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
